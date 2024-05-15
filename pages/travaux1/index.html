@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="entete">
+        <div class="logo"><span>D</span>eveloppeur<b>.</b></div>
+        <div class="menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#" id="about-link">A propos</a></li>
+          <li><a href="#" id="skills-link">Compétences</a></li>
+          <li><a href="#">Projets</a></li>
+        </div>
+      </nav>
+      <div class="corps">
+        <div class="cgauche">
+          <span class="textB">Salut</span>
+          <h1>Je suis <span id="textDefile"></span></h1>
+          <p>
+            Developpement Web | Technicien de support informatique | Chef de
+            projet
+          </p>
+          <div class="buton">
+            <button id="cvDownloadBtn">Telecharger CV</button>
+            <button id="linkedin-btn">Linkedin</button>
+          </div>
+        </div>
+        <div class="cdroite">
+          <div class="grpimg">
+            <img src="img/splah-removebg.png" id="splah" />
+            <img src="img/mol-removebg (1).png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>Nombre de visiteurs : <span id="visitsCount">0</span></h1>
+
+    <div id="about-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="img/moriel-removebg-preview.png" alt="About Image" />
+        <h2>À propos de moi</h2>
+        <br />
+        <p>
+          Moriel, c'est moi en quelques mots ! Polyvalent, je jongle avec les
+          défis grâce à ma rigueur et ma motivation inébranlables. Ma capacité à
+          m'adapter à toutes les situations témoigne de ma flexibilité. À la
+          fois discret et sociable, je suis à l'écoute des attentes de mon
+          entourage. Ma véritable passion réside dans le domaine technologique
+          et son évolution constante. J'aspire à contribuer activement à cette
+          avancée, mettant ainsi ma pierre à l'édifice de l'innovation
+        </p>
+      </div>
+    </div>
+
+    <div id="skills-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Mes compétences</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="img/logo-html.jpg" alt="HTML" />
+            <h3>HTML</h3>
+          </div>
+          <div class="skill">
+            <img src="img/logo-css.jpg" alt="CSS" />
+            <h3>CSS</h3>
+          </div>
+          <div class="skill">
+            <img src="img/js.png" alt="JavaScript" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill">
+            <img src="img/php.jpg" alt="PHP" />
+            <h3>PHP</h3>
+          </div>
+          <div class="skill">
+            <img src="img/logo-git.jpg" alt="GIT" />
+            <h3>GIT</h3>
+          </div>
+          <div class="skill">
+            <img src="img/sgbd.jpg" alt="MySQL/SQL" />
+            <h3>MySQL/SQL</h3>
+          </div>
+          <div class="skill">
+            <img src="img/logo-python.jpg" alt="MySQL/SQL" />
+            <h3>PYTHON</h3>
+          </div>
+          <div class="skill">
+            <img src="img/logo-c.jpg" alt="MySQL/SQL" />
+            <h3>C/C++</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Votre CV</h2>
+        <div class="download-btn">
+          <a href="fichier/Cv.pdf" download="Cv.pdf">
+            <button>Télécharger CV</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="projects-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Mes Projets</h2>
+        <div id="projects-container" class="projects-container"></div>
+      </div>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

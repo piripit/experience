@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('main.css');
+
+:root {
+    --my-color-gris: white;
+    --my-color-gri: gray;
+    --my-color-blue: blue;
+    --my-color-cy: darkcyan;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--my-color-gris);
+}
+
+.entete {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--my-color-gri);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 70px;
+    color: var(--my-color-cy);
+}
+
+.logo span {
+    color: var(--my-color-cy);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: var(--my-color-gri);
+    text-transform: capitalize;
+}
+
+.menu li:hover a {
+    color: var(--my-color-cy);
+}
+
+.corps {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.corps::before {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, cyan, pink);
+    left: -17%;
+    top: 40%;
+    animation: beforeAnime 6s linear infinite;
+}
+
+.corps::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, cyan, pink);
+    left: 35%;
+    top: 15%;
+    animation: afterAnime 6s linear infinite;
+}
+
+@keyframes beforeAnime {
+    50% {
+        top: 41%;
+        left: -13%;
+    }
+}
+
+@keyframes afterAnime {
+    50% {
+        top: 10%;
+        left: 27%;
+    }
+}
+
+.cgauche,
+.cdroite {
+    width: 50%;
+}
+
+.cgauche {
+    z-index: 5;
+
+}
+
+.textB {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: var(--my-color-gri);
+}
+
+.textB::after {
+    height: 4px;
+    width: 35px;
+    position: absolute;
+    content: '';
+    bottom: 10px;
+    background-color: var(--my-color-cy);
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--my-color-gri);
+}
+
+p {
+    display: block;
+    font-size: 1.1em;
+    width: 90%;
+    text-align: justify;
+    color: var(--my-color-gri);
+
+}
+
+.buton {
+    position: relative;
+    width: 100%;
+    left: 50px;
+}
+
+button {
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    background-color: var(--my-color-gri);
+    color: white;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+button:hover {
+    background-color: var(--my-color-cy);
+}
+
+.grpimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grpimg img {
+    position: relative;
+    width: calc(105%);
+    height: 100%;
+    right: -25px;
+    top: 5px;
+    animation: animateImg 5s linear infinite;
+}
+
+@keyframes animateImg {
+    50% {
+        right: 10px;
+        top: 15px;
+    }
+
+}
+
+.grpimg #splah {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    filter: saturate(200%);
+    width: 160%;
+    animation: animatesplah 5s linear infinite;
+}
+
+@keyframes animatesplah {
+    50% {
+        right: 37%;
+        top: 60%px;
+        width: 155%;
+    }
+
+}
+
+#textDefile {
+    color: var(--my-color-cy);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.skills-container {
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+#projects-modal .modal-content {
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  #projects-modal .modal-content h2 {
+    color: var(--my-color-gri);
+  }
+  
+  #projects-modal .modal-content .projects-container {
+    margin-top: 20px;
+  }
+  
+  #projects-modal .modal-content .project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #projects-modal .modal-content .project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  #projects-modal .modal-content .project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: blue;
+    text-decoration: none;
+  }

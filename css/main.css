@@ -1,0 +1,36 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styles spécifiques pour la section compétences/répertoire */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill {
+    width: calc(50% - 20px); /* Pour deux compétences par ligne */
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Styles spécifiques pour les écrans de 400px ou moins */
+@media screen and (max-width: 400px) {
+    .skill {
+        width: 100%; /* Une compétence par ligne */
+    }
+}

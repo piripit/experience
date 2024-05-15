@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <!--style switcher-->
+    <link
+      rel="stylesheet"
+      href="css/color.css"
+      class="alternate-style"
+      title="color"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/color2.css"
+      class="alternate-style"
+      title="color2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/color3.css"
+      class="alternate-style"
+      title="color3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/color4.css"
+      class="alternate-style"
+      title="color4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/color5.css"
+      class="alternate-style"
+      title="color5"
+      disabled
+    />
+    <link rel="stylesheet" href="css/style-switcher.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!--    Aside start-->
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>M</span>rl</a>
+        </div>
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="Accueil.html" class=""><i class="fa fa-home"></i>Accueil</a>
+          </li>
+          <li>
+            <a href="about.html" class=""><i class="fa fa-user"></i> A propos</a>
+          </li>
+          <li>
+            <a href="projet.html" class="active"
+              ><i class="fa-sharp fa-solid fa-hand-holding-hand"></i>Projet</a
+            >
+          </li>
+          <li>
+            <a href="travaux.html" class=""><i class="fa fa-folder"></i>Travaux</a>
+          </li>
+          <li>
+            <a href="comprep.html" class=""><i class="fa fa-list"></i>Synthèse</a>
+          </li>
+          <li>
+            <a href="veille.html" class=""
+              ><i class="fa fa-briefcase"></i> Veille</a
+            >
+          </li>
+          <li>
+            <a href="entreprise.html" class=""
+              ><i class="fa fa-building"></i> Entreprise</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class=""
+              ><i class="fa fa-comments"></i> Contacts</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--    aside-end-->
+      <!--    main content start-->
+      <div class="main-content">
+        <!--    project section start -->
+        <section class="projet section" id="projet">
+          <div class="container">
+            <div class="row">
+              <div class="section-title pad-15">
+                <h2>Mes Projets</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!--Projet item start-->
+              <div class="projet-item pad-15">
+                <div class="projet-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Web</h4>
+                  <p>Lorem ipsum dolor sit, amet</p>
+                </div>
+              </div>
+              <!--Projet item end-->
+              <!--Projet item start-->
+              <div class="projet-item pad-15">
+                <div class="projet-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Web</h4>
+                  <p>Lorem ipsum dolor sit, amet</p>
+                </div>
+              </div>
+              <!--Projet item end-->
+              <!--Projet item start-->
+              <div class="projet-item pad-15">
+                <div class="projet-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Web</h4>
+                  <p>Lorem ipsum dolor sit, amet</p>
+                </div>
+              </div>
+              <!--Projet item end-->
+            </div>
+          </div>
+        </section>
+        <!--projet section end-->
+      </div>
+      <!--main content end-->
+    </div>
+    <!--   Main container end-->
+    <!--   Style switcher start-->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas"></i>
+      </div>
+      <h4>Option Color</h4>
+      <div class="colors">
+        <span class="color" onclick="setActiveStyle('color')"></span>
+        <span class="color2" onclick="setActiveStyle('color2')"></span>
+        <span class="color3" onclick="setActiveStyle('color3')"></span>
+        <span class="color4" onclick="setActiveStyle('color4')"></span>
+        <span class="color5" onclick="setActiveStyle('color5')"></span>
+      </div>
+    </div>
+    <!--   Style switcher end-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/style-switcher.js"></script>
+  </body>
+</html>

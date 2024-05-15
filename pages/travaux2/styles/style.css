@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+
+}
+
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    position: relative;
+    background: black;
+
+
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+.slider-content p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section {
+    padding: 100px 0;
+    
+}
+
+.boxed {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.dark {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/Moi.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    color: white;
+    
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w32 {
+    width: 32%;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.skill {
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #333;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+
+}
+
+.skill h3 {
+    margin-top: 10px;
+}
+
+.realisation {
+    height: auto;
+    aspect-ratio: 9/6;
+    position: relative;
+}
+.realisation h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: max-content;
+    opacity: 0;
+    transition: 4s ease;
+
+}
+.realisation a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:white;
+}
+
+.realisation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: 4s ease;
+}
+.realisation:hover img{
+    filter:brightness(60%);
+}
+.realisation:hover h3{
+    opacity: 1;
+}
+.icon{
+    display: block;
+    font-size: 40px !important;
+}
+.label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1.5rem;
+
+}
+.value{
+    display: block;
+    font-size: 1.5rem;
+}
+.contact{
+    border:2px dashed white;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.hide{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.show{
+    display: flex;
+    opacity: 1;
+}
